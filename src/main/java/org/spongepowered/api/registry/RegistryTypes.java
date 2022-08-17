@@ -45,7 +45,9 @@ import org.spongepowered.api.data.persistence.DataFormat;
 import org.spongepowered.api.data.type.ArmorMaterial;
 import org.spongepowered.api.data.type.ArtType;
 import org.spongepowered.api.data.type.AttachmentSurface;
+import org.spongepowered.api.data.type.BambooLeavesType;
 import org.spongepowered.api.data.type.BannerPatternShape;
+import org.spongepowered.api.data.type.BellAttachmentType;
 import org.spongepowered.api.data.type.BoatType;
 import org.spongepowered.api.data.type.BodyPart;
 import org.spongepowered.api.data.type.CatType;
@@ -60,6 +62,7 @@ import org.spongepowered.api.data.type.HorseColor;
 import org.spongepowered.api.data.type.HorseStyle;
 import org.spongepowered.api.data.type.InstrumentType;
 import org.spongepowered.api.data.type.ItemTier;
+import org.spongepowered.api.data.type.JigsawBlockOrientation;
 import org.spongepowered.api.data.type.LlamaType;
 import org.spongepowered.api.data.type.MatterType;
 import org.spongepowered.api.data.type.MooshroomType;
@@ -81,6 +84,7 @@ import org.spongepowered.api.data.type.StairShape;
 import org.spongepowered.api.data.type.StructureMode;
 import org.spongepowered.api.data.type.TropicalFishShape;
 import org.spongepowered.api.data.type.VillagerType;
+import org.spongepowered.api.data.type.WallConnectionState;
 import org.spongepowered.api.data.type.WireAttachmentType;
 import org.spongepowered.api.effect.particle.ParticleOption;
 import org.spongepowered.api.effect.particle.ParticleType;
@@ -208,6 +212,8 @@ public final class RegistryTypes {
 
     public static final DefaultedRegistryType<VillagerType> VILLAGER_TYPE = RegistryTypes.minecraftKeyInGame("villager_type");
 
+    public static final DefaultedRegistryType<WallConnectionState> WALL_CONNECTION_STATE = RegistryTypes.spongeKeyInGame("wall_connection_state");
+
     // ----
 
     public static final DefaultedRegistryType<AccountDeletionResultType> ACCOUNT_DELETION_RESULT_TYPE = RegistryTypes.spongeKeyInGame("account_deletion_result_type");
@@ -220,9 +226,13 @@ public final class RegistryTypes {
 
     public static final DefaultedRegistryType<AttributeOperation> ATTRIBUTE_OPERATION = RegistryTypes.spongeKeyInGame("attribute_operation");
 
+    public static final DefaultedRegistryType<BambooLeavesType> BAMBOO_LEAVES_TYPE = RegistryTypes.spongeKeyInGame("bamboo_leaves_type");
+
     public static final DefaultedRegistryType<BanType> BAN_TYPE = RegistryTypes.spongeKeyInGame("ban_type");
 
     public static final DefaultedRegistryType<BannerPatternShape> BANNER_PATTERN_SHAPE = RegistryTypes.spongeKeyInGame("banner_pattern_shape");
+
+    public static final DefaultedRegistryType<BellAttachmentType> BELL_ATTACHMENT_TYPE = RegistryTypes.spongeKeyInGame("bell_attachment_type");
 
     public static final DefaultedRegistryType<Tag<BlockType>> BLOCK_TYPE_TAGS = RegistryTypes.spongeKeyInGame("block_type_tags");
 
@@ -317,6 +327,8 @@ public final class RegistryTypes {
     public static final DefaultedRegistryType<ItemTier> ITEM_TIER = RegistryTypes.spongeKeyInGame("item_tier");
 
     public static final DefaultedRegistryType<Tag<ItemType>> ITEM_TYPE_TAGS = RegistryTypes.spongeKeyInGame("item_type_tags");
+
+    public static final DefaultedRegistryType<JigsawBlockOrientation> JIGSAW_BLOCK_ORIENTATION = RegistryTypes.spongeKeyInGame("jigsaw_block_orientation");
 
     public static final DefaultedRegistryType<LightType> LIGHT_TYPE = RegistryTypes.spongeKeyInGame("light_type");
 
